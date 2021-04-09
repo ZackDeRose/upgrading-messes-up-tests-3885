@@ -6,6 +6,5 @@ module.exports = {
   resolver: '@nrwl/jest/plugins/resolver',
   moduleFileExtensions: ['ts', 'js', 'html'],
   coverageReporters: ['html'],
-  passWithNoTests: true,
-  projects: '<rootDir>/libs/another-lib-after-migrating',
+  passWithNoTests: true
 };
