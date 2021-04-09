@@ -20,6 +20,9 @@
     },
     "test-lib": {
       "tags": []
+    },
+    "test-lib-after-migration": {
+      "tags": []
     }
   }
 }

@@ -16,7 +16,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@upgrading-messes-up-tests-3885/test-lib": ["libs/test-lib/src/index.ts"]
+      "@upgrading-messes-up-tests-3885/test-lib": [
+        "libs/test-lib/src/index.ts"
+      ],
+      "@upgrading-messes-up-tests-3885/test-lib-after-migration": [
+        "libs/test-lib-after-migration/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
