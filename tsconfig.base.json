@@ -21,6 +21,9 @@
       ],
       "@upgrading-messes-up-tests-3885/test-lib-after-migration": [
         "libs/test-lib-after-migration/src/index.ts"
+      ],
+      "@upgrading-messes-up-tests-3885/another-lib-after-migrating": [
+        "libs/another-lib-after-migrating/src/index.ts"
       ]
     }
   },
