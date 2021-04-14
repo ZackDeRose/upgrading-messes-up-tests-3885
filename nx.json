@@ -1,34 +1,19 @@
 {
-  "npmScope": "upgrading-messes-up-tests-3885",
   "implicitDependencies": {
     "workspace.json": "*",
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
     "tsconfig.json": "*",
     "tslint.json": "*",
     "nx.json": "*"
   },
+  "npmScope": "upgrading-messes-up-tests-3885",
   "projects": {
-    "test": {
-      "tags": []
-    },
-    "test-e2e": {
-      "tags": [],
-      "implicitDependencies": ["test"]
-    },
-    "test-lib": {
-      "tags": []
-    },
-    "test-lib-after-migration": {
-      "tags": []
-    },
-    "another-lib-after-migrating": {
-      "tags": []
-    },
-    "test-lib-after-11-migration": {
-      "tags": []
-    }
+    "test": { "tags": [] },
+    "test-e2e": { "tags": [], "implicitDependencies": ["test"] },
+    "test-lib": { "tags": [] },
+    "test-lib-after-migration": { "tags": [] },
+    "another-lib-after-migrating": { "tags": [] },
+    "test-lib-after-11-migration": { "tags": [] },
+    "test-lib-after-12-migration": { "tags": [] }
   }
 }
