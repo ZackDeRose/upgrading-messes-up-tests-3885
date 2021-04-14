@@ -26,6 +26,9 @@
     },
     "another-lib-after-migrating": {
       "tags": []
+    },
+    "test-lib-after-11-migration": {
+      "tags": []
     }
   }
 }
