@@ -15,8 +15,13 @@
             "main": "apps/test/src/main.tsx",
             "polyfills": "apps/test/src/polyfills.ts",
             "tsConfig": "apps/test/tsconfig.app.json",
-            "assets": ["apps/test/src/favicon.ico", "apps/test/src/assets"],
-            "styles": ["apps/test/src/styles.css"],
+            "assets": [
+              "apps/test/src/favicon.ico",
+              "apps/test/src/assets"
+            ],
+            "styles": [
+              "apps/test/src/styles.css"
+            ],
             "scripts": [],
             "webpackConfig": "@nrwl/react/plugins/webpack"
           },
@@ -43,7 +48,10 @@
                 }
               ]
             }
-          }
+          },
+          "outputs": [
+            "{options.outputPath}"
+          ]
         },
         "serve": {
           "builder": "@nrwl/web:dev-server",
@@ -65,7 +73,10 @@
               "apps/test/tsconfig.app.json",
               "apps/test/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/test/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/test/**"
+            ]
           }
         },
         "test": {
@@ -73,7 +84,10 @@
           "options": {
             "jestConfig": "apps/test/jest.config.js",
             "tsConfig": "apps/test/tsconfig.spec.json"
-          }
+          },
+          "outputs": [
+            "coverage/apps/test"
+          ]
         }
       }
     },
@@ -100,8 +114,13 @@
           "options": {
             "linter": "eslint",
             "config": "apps/test-e2e/.eslintrc",
-            "tsConfig": ["apps/test-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/test-e2e/**"]
+            "tsConfig": [
+              "apps/test-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/test-e2e/**"
+            ]
           }
         }
       }
@@ -121,7 +140,10 @@
               "libs/test-lib/tsconfig.lib.json",
               "libs/test-lib/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/test-lib/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/test-lib/**"
+            ]
           }
         },
         "test": {
@@ -129,7 +151,10 @@
           "options": {
             "jestConfig": "libs/test-lib/jest.config.js",
             "tsConfig": "libs/test-lib/tsconfig.spec.json"
-          }
+          },
+          "outputs": [
+            "coverage/libs/test-lib"
+          ]
         }
       }
     },
@@ -152,7 +177,10 @@
           "options": {
             "jestConfig": "libs/test-lib-after-migration/jest.config.js",
             "passWithNoTests": true
-          }
+          },
+          "outputs": [
+            "coverage/libs/test-lib-after-migration"
+          ]
         }
       }
     },
@@ -175,7 +203,10 @@
           "options": {
             "jestConfig": "libs/another-lib-after-migrating/jest.config.js",
             "passWithNoTests": true
-          }
+          },
+          "outputs": [
+            "coverage/libs/another-lib-after-migrating"
+          ]
         }
       }
     }
